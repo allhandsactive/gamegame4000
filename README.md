@@ -1,9 +1,51 @@
-# gamegame 4000
+# gameGame 4000
 All code for the *gameGame 4000* ESP8266 wifi-enabled badge with SSD1331 RGB OLED display, and video game-contoller style buttons is made by *All Hands Active* (http://www.allhandsactive.org), a 501(c)(3) not-for-profit hackerspace (http://hackerspaces.org) located in Downtown Ann Arbor, MI, USA.
 
 As any good hackerspace should, we encourage people to fully tinker with our code and designs, and to find novel uses for this project.  We'd love to hear of your projects using our badge -- please get in contact with us if you'd like to share your project!
 
 Since it is based on the same processor, much of this documentation is copied over from our last kit, the *mktwo* badge (https://github.com/allhandsactive/mktwo-badge/blob/master/README.md)
+
+### **Kit parts list**
+
+Make sure you have the following in your kit:
+
+1x gameGame 4000 PCB
+
+1x ESP8266 12E or 12F microprocessor
+
+1x SSD1331 OLED display
+
+1x 3-AA battery holder
+
+1x Female battery connector lead with pigtail
+
+1x Male battery connector header
+
+1x Toggle switch
+
+1x Header 7-socket
+
+1x Right-angle header 6-pin
+
+1x Speaker 8-ohm 20mm
+
+1x Linear regulator 1.2A 3.3v STMicroelectronics P/N LDL1117S33R
+
+1x Shift register 8-bit Nexperia USA Inc. P/N 74HC597D,653
+
+2x Electrolytic capacitor 10uF 50V
+
+2x Ceramic capacitor 0.1uF 50V
+
+4x Nylon standoff M2 x 12mm
+
+4x Nylon nut M2
+
+4x Nylon screw M2 x 5mm
+
+10x Push button
+
+12x Resistor 10k Ohm 1/8W 5%
 
 ### **Requirements**
 #### **Hardware**
@@ -35,14 +77,23 @@ Now restart the Arduino IDE.
 Under the Arduino IDE settings (most of these seem to be defaults):
 
 Board: "NodeMCU 1.0 (ESP-12E Module)"
+
 CPU Frequency: "80 MHz"
+
 Debug Port: "Disabled"
+
 Debug Level: "None"
+
 lwIP Variant: "v2 Lower Memory"
+
 Flash Size: "4M (3M SPIFFS)"
+
 Upload Speed: "460800" (try lowering this if you have issues while programming the board)
+
 Port: (whatever port the programming cable is on.  In Linux, it'll be something like `/dev/ttyUSB0`)
+
 Programmer: "AVRISP mkII"
+
 Erase Flash: "Only Sketch"
 
 ##### **PROCEDURE**
@@ -58,16 +109,27 @@ You may now compile and upload as you would with any Arduino, using the Arduino 
 The speaker is linked to pin 5, if you wish to make bleeps and bloops with the `tone` function.
 
 Other pin settings that might be useful:
+
 For the OLED display:
+
 sclk = 14
+
 mosi = 13
+
 cs = 2
+
 rst = 0
+
 dc = 16
+
 For buttons (check out the example code in this repo):
+
 pl/sload = 4
+
 shcp/sck = 0
+
 stcp/clk = 15
+
 shift reg. serial output ("BUTTONS" on schematic) = 10
 
 The board works great with three NiMH AA batteries.
