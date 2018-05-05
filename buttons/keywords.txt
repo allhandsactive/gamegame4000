@@ -1,0 +1,27 @@
+#######################################
+# Syntax Coloring Map For gameGame_buttons
+####################################### 
+# Class
+#######################################
+
+Buttons		KEYWORD1
+
+#######################################
+# Methods and Functions 
+#######################################	
+
+
+readButtons KEYWORD2
+
+#######################################
+# Constants
+#######################################
+
+UP		LITERAL1
+DOWN		LITERAL1
+LEFT		LITERAL1
+RIGHT		LITERAL1
+A		LITERAL1
+B		LITERAL1
+SELECT		LITERAL1
+START		LITERAL1
