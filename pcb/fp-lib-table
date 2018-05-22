@@ -1,0 +1,4 @@
+(fp_lib_table
+  (lib (name penguiconbadge2)(type KiCad)(uri /home/nristow/Dropbox/freelance/penguiconbadge2.pretty)(options "")(descr ""))
+  (lib (name gglib)(type KiCad)(uri "$(KIPRJMOD)/gglib.pretty")(options "")(descr ""))
+)

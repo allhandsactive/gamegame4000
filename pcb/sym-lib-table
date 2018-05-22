@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name Gamegame-rescue)(type Legacy)(uri ${KIPRJMOD}/Gamegame-rescue.lib)(options "")(descr ""))
+  (lib (name gamegame4000)(type Legacy)(uri /home/nristow/Dropbox/projects/Gamegame/gamegame4000.lib)(options "")(descr ""))
+)
