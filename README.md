@@ -5,6 +5,9 @@ As any good hackerspace should, we encourage people to fully tinker with our cod
 
 Since it is based on the same processor, much of this documentation is copied over from our last kit, the *mktwo* badge (https://github.com/allhandsactive/mktwo-badge/blob/master/README.md)
 
+# Build instructions on Imgur
+https://imgur.com/gallery/5YhMqiV
+
 ### **Kit parts list**
 
 Make sure you have the following in your kit:
