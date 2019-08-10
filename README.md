@@ -1,12 +1,12 @@
 # gameGame 4000
-All code for the *gameGame 4000* ESP8266 wifi-enabled badge with SSD1331 RGB OLED display, and video game-contoller style buttons is made by *All Hands Active* (http://www.allhandsactive.org), a 501(c)(3) not-for-profit hackerspace (http://hackerspaces.org) located in Downtown Ann Arbor, MI, USA.
+This is the *gameGame 4000*: an ESP8266-based, wifi-enabled "badge" learn-to-solder project designed for anyone who is interested in soldering on a somewhat intermediate level, or how to program these ubiquitous microcontrollers. Along with the ESP8266, it is equipped with an SSD1331 RGB OLED display, video game controller-alike buttons, and a small speaker for bleeps and bloops.  This kit is designed by *All Hands Active* (http://www.allhandsactive.org), a 501(c)(3) not-for-profit hackerspace (http://hackerspaces.org) located in Downtown Ann Arbor, MI, USA.  The included Arkanoid demo code here is based, almost verbatim, on code from the *ssd1331* library by Alexey Dynda (@lexus2k).  We added some tweaks to accommodate our unique button handling library, and adjusted pins to match our OLED screen setup.
 
-As any good hackerspace should, we encourage people to fully tinker with our code and designs, and to find novel uses for this project.  We'd love to hear of your projects using our badge -- please get in contact with us if you'd like to share your project!
+As any good hackerspace should, we encourage people to fully tinker with the code and designs, and to find novel uses for this project.  We'd love to hear of your projects using our badge -- please get in contact with us if you'd like to share your project!
 
 Since it is based on the same processor, much of this documentation is copied over from our last kit, the *mktwo* badge (https://github.com/allhandsactive/mktwo-badge/blob/master/README.md)
 
 # Build instructions on Imgur
-https://imgur.com/gallery/5YhMqiV
+Heads up! There are a few errors in the assembly pictures at the imgur link here.  Please follow the instructions in the captions first and foremost: https://imgur.com/gallery/5YhMqiV
 
 ### **Kit parts list**
 
@@ -101,7 +101,7 @@ Erase Flash: "Only Sketch"
 
 ##### **PROCEDURE**
 
-Let's take a look at the `ssd1306` library's demo games.  After installing that library, you can load up the `arkanoid8-pcon` code from this repo.
+Let's take a look at the `ssd1306` library's demo games.  After installing that library, you can load up the `arkanoid8-gamegame` code from this repo.
 
 To upload your code, you need to put the badge into "write" or "programming" mode.  To do this, locate the `PRGM` and `RESET` buttons on the badge.  Hold the `PRGM` button. Press and release the `RESET` button. You may now release `PRGM`. **You will need to repeat this procedure before each firmware upload.**
 You may now compile and upload as you would with any Arduino, using the Arduino IDE.
