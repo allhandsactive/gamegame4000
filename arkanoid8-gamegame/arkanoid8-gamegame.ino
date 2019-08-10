@@ -40,6 +40,8 @@
 //Set up the buttons for the gameGame 4000.  See the `button` code for more info.
 Buttons button(4,0,15,10);
 
+#define SPEAKER 5
+
 NanoEngine8 engine;
 
 static uint8_t g_level = 0;
@@ -277,14 +279,17 @@ void moveBall(void)
         if (checkGameAreaHit())
         {
             moveBall = true;
+            tone(SPEAKER, 880, 50);
         }
         if (checkPlatformHit())
         {
             moveBall = true;
+            tone(SPEAKER, 440, 50);
         }
         if (checkBlockHit())
         {
             moveBall = true;
+            tone(SPEAKER, 220, 50);
         }
     }
     while (moveBall);
